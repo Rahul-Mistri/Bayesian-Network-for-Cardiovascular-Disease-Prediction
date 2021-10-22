@@ -1,0 +1,97 @@
+network "unnamedBN" {
+// written by aGrUM 0.22.2
+}
+
+variable Heart_Disease {
+   type discrete[2] {No, Yes};
+}
+
+variable Chest_Pain_Type {
+   type discrete[4] {ASY, ATA, NAP, TA};
+}
+
+variable ST_Slope {
+   type discrete[3] {Down, Flat, Up};
+}
+
+variable Diabetic {
+   type discrete[2] {No, Yes};
+}
+
+variable Exercise_Angina {
+   type discrete[2] {No, Yes};
+}
+
+variable Age {
+   type discrete[6] {20s, 30s, 40s, 50s, 60s, 70s};
+}
+
+variable Resting_BP {
+   type discrete[4] {Normal, Elevated, High, Extreme};
+}
+
+variable Cholesterol {
+   type discrete[3] {LT200, BET200-239, GT240};
+}
+
+probability (Heart_Disease | Cholesterol, Diabetic, Resting_BP) {
+   (LT200, No, Normal) 0.75 0.25;
+   (BET200-239, No, Normal) 0.62069 0.37931;
+   (GT240, No, Normal) 0.354839 0.645161;
+   (LT200, Yes, Normal) 0.673 0.327;
+   (BET200-239, Yes, Normal) 0.5508 0.4492;
+   (GT240, Yes, Normal) 0.25 0.75;
+   (LT200, No, Elevated) 0.62963 0.37037;
+   (BET200-239, No, Elevated) 0.529412 0.470588;
+   (GT240, No, Elevated) 0.436364 0.563636;
+   (LT200, Yes, Elevated) 0.555556 0.444444;
+   (BET200-239, Yes, Elevated) 0.444444 0.555556;
+   (GT240, Yes, Elevated) 0.428571 0.571429;
+   (LT200, No, High) 0.608696 0.391304;
+   (BET200-239, No, High) 0.571429 0.428571;
+   (GT240, No, High) 0.5 0.5;
+   (LT200, Yes, High) 0.4 0.6;
+   (BET200-239, Yes, High) 0.222222 0.777778;
+   (GT240, Yes, High) 0.2 0.8;
+   (LT200, No, Extreme) 0.529412 0.470588;
+   (BET200-239, No, Extreme) 0.36 0.64;
+   (GT240, No, Extreme) 0.3625 0.6375;
+   (LT200, Yes, Extreme) 0.444444 0.555556;
+   (BET200-239, Yes, Extreme) 0.3125 0.6875;
+   (GT240, Yes, Extreme) 0.206897 0.793103;
+}
+probability (Chest_Pain_Type | Exercise_Angina) {
+   (No) 0.340694 0.302839 0.274448 0.082019;
+   (Yes) 0.809717 0.044534 0.121457 0.024291;
+}
+probability (ST_Slope | Age) {
+   (20s) 0.1 0.25 0.65;
+   (30s) 0.040816 0.346939 0.612245;
+   (40s) 0.028777 0.42446 0.546763;
+   (50s) 0.064378 0.51073 0.424893;
+   (60s) 0.092437 0.655462 0.252101;
+   (70s) 0.3 0.55 0.15;
+}
+probability (Diabetic) {
+   default 0.812057 0.187943;
+}
+probability (Exercise_Angina | ST_Slope) {
+   (Down) 0.315789 0.684211;
+   (Flat) 0.348592 0.651408;
+   (Up) 0.85124 0.14876;
+}
+probability (Age) {
+   default 0.007092 0.086879 0.246454 0.413121 0.210993 0.035461;
+}
+probability (Resting_BP | Age) {
+   (20s) 0.5 0.25 0.125 0.125;
+   (30s) 0.285714 0.346939 0.163265 0.204082;
+   (40s) 0.223022 0.244604 0.23741 0.294964;
+   (50s) 0.103004 0.240343 0.248927 0.407725;
+   (60s) 0.10084 0.176471 0.235294 0.487395;
+   (70s) 0.05 0.15 0.15 0.65;
+}
+probability (Cholesterol) {
+   default 0.203901 0.342199 0.453901;
+}
+

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="432pt" height="252pt" viewBox="0.00 0.00 432.00 251.57">
+<g id="graph0" class="graph" transform="scale(0.88 0.88) rotate(0) translate(4 282.39)">
+<title>G</title>
+<!-- Heart Disease -->
+<g id="node1" class="node">
+<title>Heart Disease</title>
+<ellipse fill="#808080" stroke="black" cx="158.43" cy="-103.86" rx="64.19" ry="20.51"/>
+<text text-anchor="middle" x="158.43" y="-100.16" font-family="Times New Roman,serif" font-size="14.00" fill="white">Heart Disease</text>
+</g>
+<!-- U -->
+<g id="node10" class="node">
+<title>U</title>
+<polygon fill="#50508a" stroke="black" points="128.43,-23.68 114.93,-47.54 87.93,-47.54 74.43,-23.68 87.93,0.18 114.93,0.18 128.43,-23.68"/>
+<text text-anchor="middle" x="101.43" y="-19.98" font-family="Times New Roman,serif" font-size="14.00" fill="white">U</text>
+</g>
+<!-- Heart Disease&#45;&gt;U -->
+<g id="edge1" class="edge">
+<title>Heart Disease-&gt;U</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M144.34,-83.54C137.69,-74.42 129.63,-63.36 122.29,-53.3"/>
+<polygon fill="black" stroke="black" points="125.07,-51.17 116.35,-45.15 119.41,-55.29 125.07,-51.17"/>
+</g>
+<!-- Chest Pain Type -->
+<g id="node2" class="node">
+<title>Chest Pain Type</title>
+<ellipse fill="#808080" stroke="black" cx="407.43" cy="-23.68" rx="76.24" ry="20.51"/>
+<text text-anchor="middle" x="407.43" y="-19.98" font-family="Times New Roman,serif" font-size="14.00" fill="white">Chest Pain Type</text>
+</g>
+<!-- ST Slope -->
+<g id="node3" class="node">
+<title>ST Slope</title>
+<ellipse fill="#808080" stroke="black" cx="407.43" cy="-180.88" rx="48.17" ry="20.51"/>
+<text text-anchor="middle" x="407.43" y="-177.18" font-family="Times New Roman,serif" font-size="14.00" fill="white">ST Slope</text>
+</g>
+<!-- Exercise Angina -->
+<g id="node5" class="node">
+<title>Exercise Angina</title>
+<ellipse fill="#808080" stroke="black" cx="407.43" cy="-103.86" rx="74.49" ry="20.51"/>
+<text text-anchor="middle" x="407.43" y="-100.16" font-family="Times New Roman,serif" font-size="14.00" fill="white">Exercise Angina</text>
+</g>
+<!-- ST Slope&#45;&gt;Exercise Angina -->
+<g id="edge2" class="edge">
+<title>ST Slope-&gt;Exercise Angina</title>
+<path fill="none" stroke="black" d="M407.43,-160.17C407.43,-152.33 407.43,-143.14 407.43,-134.53"/>
+<polygon fill="black" stroke="black" points="410.93,-134.44 407.43,-124.44 403.93,-134.44 410.93,-134.44"/>
+</g>
+<!-- Diabetic -->
+<g id="node4" class="node">
+<title>Diabetic</title>
+<ellipse fill="#808080" stroke="black" cx="42.43" cy="-180.88" rx="42.35" ry="20.51"/>
+<text text-anchor="middle" x="42.43" y="-177.18" font-family="Times New Roman,serif" font-size="14.00" fill="white">Diabetic</text>
+</g>
+<!-- Diabetic&#45;&gt;Heart Disease -->
+<g id="edge3" class="edge">
+<title>Diabetic-&gt;Heart Disease</title>
+<path fill="none" stroke="black" d="M67.03,-163.97C83.14,-153.54 104.48,-139.75 122.49,-128.1"/>
+<polygon fill="black" stroke="black" points="124.52,-130.96 131.02,-122.59 120.72,-125.08 124.52,-130.96"/>
+</g>
+<!-- Exercise Angina&#45;&gt;Chest Pain Type -->
+<g id="edge4" class="edge">
+<title>Exercise Angina-&gt;Chest Pain Type</title>
+<path fill="none" stroke="black" d="M407.43,-83.13C407.43,-74.52 407.43,-64.23 407.43,-54.71"/>
+<polygon fill="black" stroke="black" points="410.93,-54.4 407.43,-44.4 403.93,-54.4 410.93,-54.4"/>
+</g>
+<!-- Age -->
+<g id="node6" class="node">
+<title>Age</title>
+<ellipse fill="#808080" stroke="black" cx="282.43" cy="-257.89" rx="27" ry="20.51"/>
+<text text-anchor="middle" x="282.43" y="-254.19" font-family="Times New Roman,serif" font-size="14.00" fill="white">Age</text>
+</g>
+<!-- Age&#45;&gt;ST Slope -->
+<g id="edge5" class="edge">
+<title>Age-&gt;ST Slope</title>
+<path fill="none" stroke="black" d="M303.07,-244.5C321.72,-233.31 349.57,-216.6 371.81,-203.25"/>
+<polygon fill="black" stroke="black" points="373.87,-206.09 380.64,-197.95 370.27,-200.09 373.87,-206.09"/>
+</g>
+<!-- Resting BP -->
+<g id="node7" class="node">
+<title>Resting BP</title>
+<ellipse fill="#808080" stroke="black" cx="158.43" cy="-180.88" rx="55.31" ry="20.51"/>
+<text text-anchor="middle" x="158.43" y="-177.18" font-family="Times New Roman,serif" font-size="14.00" fill="white">Resting BP</text>
+</g>
+<!-- Age&#45;&gt;Resting BP -->
+<g id="edge6" class="edge">
+<title>Age-&gt;Resting BP</title>
+<path fill="none" stroke="black" d="M261.95,-244.5C243.81,-233.53 216.9,-217.25 195.06,-204.04"/>
+<polygon fill="black" stroke="black" points="196.73,-200.95 186.36,-198.77 193.11,-206.94 196.73,-200.95"/>
+</g>
+<!-- Resting BP&#45;&gt;Heart Disease -->
+<g id="edge7" class="edge">
+<title>Resting BP-&gt;Heart Disease</title>
+<path fill="none" stroke="black" d="M158.43,-160.17C158.43,-152.33 158.43,-143.14 158.43,-134.53"/>
+<polygon fill="black" stroke="black" points="161.93,-134.44 158.43,-124.44 154.93,-134.44 161.93,-134.44"/>
+</g>
+<!-- Cholesterol -->
+<g id="node8" class="node">
+<title>Cholesterol</title>
+<ellipse fill="#808080" stroke="black" cx="286.43" cy="-180.88" rx="55.31" ry="20.51"/>
+<text text-anchor="middle" x="286.43" y="-177.18" font-family="Times New Roman,serif" font-size="14.00" fill="white">Cholesterol</text>
+</g>
+<!-- Cholesterol&#45;&gt;Heart Disease -->
+<g id="edge8" class="edge">
+<title>Cholesterol-&gt;Heart Disease</title>
+<path fill="none" stroke="black" d="M258.02,-163.23C240.01,-152.67 216.48,-138.89 196.82,-127.36"/>
+<polygon fill="black" stroke="black" points="198.49,-124.28 188.09,-122.25 194.95,-130.32 198.49,-124.28"/>
+</g>
+<!-- Intervene -->
+<g id="node9" class="node">
+<title>Intervene</title>
+<polygon fill="#9a5050" stroke="black" points="76.43,-118.36 10.43,-118.36 10.43,-89.36 76.43,-89.36 76.43,-118.36"/>
+<text text-anchor="middle" x="43.43" y="-100.16" font-family="Times New Roman,serif" font-size="14.00" fill="white">Intervene</text>
+</g>
+<!-- Intervene&#45;&gt;U -->
+<g id="edge9" class="edge">
+<title>Intervene-&gt;U</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M53.53,-89.24C60.86,-79.36 71.04,-65.63 80.14,-53.37"/>
+<polygon fill="black" stroke="black" points="83.06,-55.31 86.21,-45.19 77.44,-51.13 83.06,-55.31"/>
+</g>
+</g>
+</svg>
